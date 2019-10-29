@@ -15,36 +15,36 @@ Very Basic Yii2 Restful without ActiveController
 
 ```
 
-		'urlManager' => [
-		        'enablePrettyUrl' => true,
-		        'showScriptName' => false,
-		    	'rules' => [
-		    		[
-		    		 'class' => 'yii\rest\UrlRule', 
-		    		 'controller' => 'post',
-		    	     'extraPatterns'=> [
-		    	     		'DELETE all'=>'delete-all'
-		    	     		]
-		    	    ]
-		    	 ],	
+'urlManager' => [
+'enablePrettyUrl' => true,
+'showScriptName' => false,
+'rules' => [
+	[
+	 'class' => 'yii\rest\UrlRule', 
+	 'controller' => 'post',
+     'extraPatterns'=> [
+		'DELETE all'=>'delete-all'
+		]
+    ]
+ ],	
    ```
  
  ### Json Response 
  
  ```
- 		'request' => [
+	'request' => [
 
-        	'enableCookieValidation' => false,
+	'enableCookieValidation' => false,
 
-        	'enableCsrfValidation' => false,
+	'enableCsrfValidation' => false,
 
-        	'cookieValidationKey' => 'xxxxxxx',
+	'cookieValidationKey' => 'xxxxxxx',
 
 
-			'parsers' => [
-				'application/json' => 'yii\web\JsonParser',
-			]
-		],	
+		'parsers' => [
+			'application/json' => 'yii\web\JsonParser',
+		]
+	],	
 ```
 
 ### Responses 
