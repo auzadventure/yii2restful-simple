@@ -5,6 +5,11 @@ Very Basic Yii2 Restful without ActiveController
 
 * sqlite
 
+Set it with 
+
+`sqlite:' . dirname(__FILE__) . "/../data/db.sqlite;dbname=meetup",`
+
+
 * 1 model 'post'
 
 
