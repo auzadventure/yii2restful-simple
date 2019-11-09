@@ -34,6 +34,22 @@ Set it with
  ],	
    ```
  
+ - Edit Your .htaccess in the /web folder 
+ 
+ ```
+ RewriteEngine on
+# If a directory or a file exists, use the request directly
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Otherwise forward the request to index.php
+RewriteRule . index.php 
+```
+ 
+ 
+ 
+ 
  ### Json Response 
  
  ```
